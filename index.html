@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasty HUT</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class=" .poppins-regular w-11/12 mx-auto py-8">
+    <header>
+        <!--Navbar-->
+        <nav class="navbar">
+            <div class="navbar-start">
+                <img src="./images/Tasty_HUT.png" alt="">
+            </div>
+            <div class="navbar-end">
+                <button class="btn font-bold p-4 px-6 rounded-lg bg-[#FFC107]">Sign Up</button>
+            </div>
+        </nav>
+    </header>
+    <!-- banner section -->
+<section  class="banner h-[600px] flex flex-col justify-center">
+    <h1 class="text-[#FFFFFF] text-center lg:text-6xl text-3xl font-bold">Taste Our Delicious<br> Best Foods</h1>
+<p class="text-white text-center">There are many variations of passages of Lorem Ipsum available, but the majority have<br> suffered alteration in some form, by injected humou.</p>
+<div class="flex justify-center p-4 gap-2 "><input class="p-3 bg-white rounded-lg w-[260px] lg:w-[400px]" type="search" placeholder="Search any food"><button class="btn p-4 text-black font-bold bg-[#FFC107] border-none px-6">Search</button></div>
+</section> 
+<!-- main -->
+<main>
+
+    <section class="border-2 my-8 lg:mt-14">
+        <h1 class=" text-center lg:text-6xl text-3xl font-bold my-8 lg:my-16">Your Favourite Food</h1>
+    </section>
+    <div class="flex justify-center mb-8">
+        <button class="btn p-4 text-black font-bold bg-[#FFC107] border-none px-6">Show All</button>
+    </div>
+</main>
+<!-- Open the modal using ID.showModal() method -->
+<button class="btn" onclick="my_modal_5.showModal()">open modal</button>
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <h3 class="text-lg font-bold">Hello!</h3>
+    <p class="py-4">Press ESC key or click the button below to close</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+<!-- footer -->
+<footer>
+    <section class="bg-[#c69c1e]  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-14 font-semibold justify-center border-2">
+        <div>
+            <h1 class="text-2xl font-bold  my-4">Section</h1>
+            <p>Home</p>
+            <p>Features</p>
+            <p>Pricing</p>
+            <p>FAQs</p>
+            <p>About</p>
+        </div>
+        <div>
+            <h1 class="text-2xl font-bold  my-4">Section</h1>
+            <p>UIUX Design</p>
+            <p>Product Design</p>
+            <p>BackEnd Developer</p>
+            <p>Frontend Developer</p>
+        </div>
+        <div>
+            <h1 class="text-2xl font-bold  my-4">Resources</h1>
+            <p>FAQs</p>
+            <p>Support</p>
+            <p>Privacy Policy</p>
+            <p>Terms of Service</p>
+        </div>
+    
+    <div>
+        <h1 class="text-2xl font-bold my-4">Subscribe to our newsletter</h1>
+        <p class="text-start">There are many variations of passages of available,<br> but the majority have suffered</p>
+        <div class="lg:flex gap-2 lg:mt-4 mt-0"><input class="p-3 bg-white rounded-lg w-[200px] lg:my-0  my-4" type="search" placeholder="Email address"><button class="btn p-4 font-bold bg-[#9b391b] border-none px-6 text-white">Subscribe</button></div>
+    </div>
+    </section>
+</footer>
+    <script src="./app.js"></script>
+</body>
+</html>
